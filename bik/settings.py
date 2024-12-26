@@ -125,6 +125,7 @@ STATIC_URL = "/static/"
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
+    "/opt/render/project/src/static"
 ]
 
 # Default primary key field type
