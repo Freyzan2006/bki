@@ -1,0 +1,56 @@
+{% extends 'main/layoutEN.html' %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'Laboratories/KletkaTech/css/KletkaTech.css' %}">
+{% endblock %}
+
+
+{% block title %}
+    KletkaTechEN
+{% endblock %}
+
+
+{% block content %}
+<div class = "conteiner">
+    {% block LEVE_LB %}
+        {% if LEVE_LB %}
+            <div class = "LEVE_LB_div">
+                <button class = "LEVE_LB_btn">History</button>
+                <button class = "LEVE_LB_btn">Research</button>
+                <button class = "LEVE_LB_btn">Results</button>
+                <button class = "LEVE_LB_btn">Achievements</button>
+                <button class = "LEVE_LB_btn">Employees</button>
+                <button class = "LEVE_LB_btn">Publications</button>
+                <button class = "LEVE_LB_btn">Projects</button>
+                <button class = "LEVE_LB_btn">Services</button>
+                <button class = "LEVE_LB_btn">Contacts</button>
+            </div>
+            <link rel = "stylesheet" href = "{% static 'Laboratories/Laboratories.css' %}">
+        {% endif %}
+    {% endblock %}
+
+    <h1 class = "Name_html_now">Cellular technologies of vegetable and plant crops</h1>
+
+    <div class = "Laboratories_content">
+        <h2>Laboratory of Cell Technologies of Vegetable and Plant Crops</h2>
+        <h3>Head of the laboratory</h3>
+        <h2>Doctor of Chemical Sciences, Professor Ziyavitdinov Jamolitdin Fazlitdinovich</h2>
+
+        <h3>History of the laboratory</h3>
+        <p>The laboratory is one of the youngest laboratories in the Institute, which was established in 2018 on the basis
+            of the "Laboratory of Cell Technology" within the institute.</p>
+        <p>The main scientific direction of the laboratory is the research of molecular-biochemical mechanisms of metabolic
+            pathways in stress-resistant prospective plants, determination of molecular biochemical features of stress
+            resistance, creation of a bank of their genetic material, introduction of prospective plants into in vitro
+            culture and adaptation to stress.</p>
+    </div>
+    
+
+    {% if LEVE_LB %}
+        <script src = "{% static 'Laboratories/KletkaTech/js/KletkaTechEN.js' %}"></script>
+    {% endif %}
+    
+</div>
+
+{% endblock %}

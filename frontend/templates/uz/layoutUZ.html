@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="uz">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{% static 'lib/bootstrap/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'lib/fonts/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'layout/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'layout/css/media.css' %}">
+    <link rel="icon" href="{% static 'layout/images/icon.png' %}">
+
+    
+    {% block style %}
+    {% endblock %}
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <nav class="nav__bar">
+        <section class="conteiner" id="Logo_nav">
+            <div class="logo">
+                <a href="#!">
+                    <img src="{% static 'layout/images/header/logo.png' %}" alt="">
+                </a>
+                <h3 class="Title_nav">
+                    A.S.Sodiqov nomidagi Bioorganik kimyo instituti
+                    <span>O‘zbekiston respublika fanlar akademiyasi</span>
+                </h3>
+            </div>
+            
+            <div class="Contact_nav">
+                <div class="Langlich_nav">
+                    {% block language %}
+                        {% for k, v in language.items %}
+                            {% if k == "O'zb" %}
+                                <a class="Langlich_link" href="{{ v }}"><img src="{% static "layout/images/header/uz.png" %}" alt="O'zbekcha">
+                                    <span>{{ k }}</span></a>
+                            {% elif k == "Рус" %}
+                                <a class="Langlich_link" href="{{ v }}"><img src="{% static 'layout/images/header/ru.png' %}" alt="O'zbekcha">
+                                    <span>{{ k }}</span></a>
+                            {% else %}
+                                <a class="Langlich_link" href="{{ v }}"><img src="{% static 'layout/images/header/en.png' %}" alt="O'zbekcha">
+                                    <span>{{ k }}</span></a>
+                            {% endif %}
+                        {% endfor %}
+                    {% endblock language %}
+                </div>
+                {% comment %} <input type="search" id="Search_nav" placeholder="Search"> {% endcomment %}
+            </div>
+
+            <div class = "Thema_HTML">
+                <input id = "Thema_HTML_Input" name = "radio_thema" type="radio">
+                
+                
+                <div class="Thema_HTML_div">
+                    <label id = "Thema_HTML_div_label" for="Thema_HTML_Input">
+                        <i class="fas fa-moon"></i>
+                    </label>
+                </div>
+            </div>
+        </section>
+        <section id="Title_menu_nav">
+            
+            <input type="checkbox" id = "Menu_btn">
+            <label for="Menu_btn" id = "Menu_btn_label">
+                <i class = "fas fa-server"></i>
+            </label>
+            
+            <menu class="conteiner" id="menu">
+                <label for="Menu_btn" id = "OnMenu_btn_label">
+                    <i class = "fas fa-server"></i>
+                </label>
+
+                <a class = "Home_icon" href = "{% url 'home' %}"><i class = "fas fa-home"></i></a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Institut haqida <i class="fas fa-chevron-down dropdown_icon"></i></button>
+                    <div class="dropdown-content">
+                        <div class="dropdown2">
+                            <button class="dropbtn2">Tarix</button>
+                            <div class="dropdown-content2">
+                                <a href = "{% url 'History' %}">Institut tarixi</a>  
+                                <a href = "{% url 'Directors' %}">Direktorlar</a>
+                            </div>
+                        </div>
+
+                        <a href="{% url 'Management' %}">Yetakchilik</a>
+                        <a href="{% url 'SciDirection' %}">Ilmiy yo‘nalish</a>
+
+                        <div class="dropdown2">
+                            <button class="dropbtn2">Laboratoriyalar</button>
+                            <div class="dropdown-content2">
+                                <a href = "{% url 'Chemistry_of_proteins_and_peptides' %}">Oqsillar va peptidlar kimyosi</a>  
+                                <a href = "{% url 'BiolActiv' %}">Biologik faol makromolekulyar tizimlar</a>
+                                <a>Fermentlar kimyosi</a>
+                                <a>O'simliklar sitoprotektorlari</a>
+                                <a>Past molekulyar og'irlikdagi biologik faol birikmalar</a>
+                                <a>Murakkab ulanishlar</a>
+                                <a href = "{% url 'ExperTechnol' %}">Eksperimental va texnologik</a>
+                                <a href = "{% url 'Pharmacology' %}">Farmakologiya va biologik faol moddalar skriningi</a>
+                                <a href = "{% url 'KletkaTech' %}">Sabzavot va o'simlik ekinlarining uyali texnologiyalari</a>
+                                <a href = "{% url 'DevelopmentPermit' %}">Biopolimerlar asosida tabiiy dori vositalarini ishlab chiqish</a>
+                            </div>
+                        </div>
+
+                        <a href="#!">Yutuqlar</a>
+                        <a href="#!">Amaliy ishlanmalar va patentlar</a>
+                        <a href="#!">Hamkorlik</a>
+                        <a href="#!">Nashrlar</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Ilmiy kengash <i class="fas fa-chevron-down dropdown_icon"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#!">Tarkib</a>
+                        <a href="#!">Uchrashuvlar</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Matbuot xizmati <i class="fas fa-chevron-down dropdown_icon"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#!">Tadbirlar</a>
+                        <a href="#!">E'lonlar</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Dissertatsiya kengashi <i class="fas fa-chevron-down dropdown_icon"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#!">Tarkibi</a>
+                        <a href="#!">Etakchi tashkilotlar ro'yxati</a>
+                        <a href="#!">Himoya haqida ma'lumot</a>
+                        <a href="#!">Ilmiy seminar</a>
+                        <a href="#!">Yosh olimlar kengashi</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">KFM <i class="fas fa-chevron-down dropdown_icon"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#!">Uskunalar ro'yxati</a>
+                        <a href="#!">Tadqiqot usullari</a>
+                        <a href="#!">Xizmatlar</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">EIC <i class="fas fa-chevron-down dropdown_icon"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#!">Ссылка 16</a>
+                        <a href="#!">Ссылка 17</a>
+                        <a href="#!">Ссылка 18</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Kasaba uyushmasi <i class="fas fa-chevron-down dropdown_icon"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#!">Ссылка 19</a>
+                        <a href="#!">Ссылка 20</a>
+                        <a href="#!">Ссылка 21</a>
+                    </div>
+                </div>
+            </menu>
+        </section>
+    </nav>
+    
+    <div class = "MAIN" style = "">
+        {% block GUI_left %}
+            {% if list_GUI_left %}
+                <ul class = "GUI_left">
+                    {% for k, v in list_GUI_left.items %}
+                        <li><a href = "{{ v }}">{{ k }}</a></li>
+                    {% endfor %}
+                </ul>
+                <style>
+                    .MAIN {
+                        display: flex; flex-direction: row;  align-items: flex-start; justyfy-content: center;
+                    }
+                </style>
+            {% endif %}
+        {% endblock GUI_left %} 
+        
+        {% block content %}
+        {% endblock content %}
+
+    </div>
+    
+
+    <footer class="footer">
+        <div class="footer_info conteiner">
+
+            <ul class="footer_info_list">
+                <li>
+                    <h3>Info</h3>
+                </li>
+                <li><i class="fas fa-home"></i>
+                    O'zbekiston, 100125,
+                    Toshkent shahar, Mirzo
+                    Ulug'bek, 83
+                </li>
+                <li><i class="fas fa-envelope"></i> info@biochem.uz</li>
+            </ul>
+            <div class="footer_info_contart">
+                <ul>
+                    <li>
+                        <h3>Contact</h3>
+                    </li>
+                    <li><i class="fas fa-mobile-alt"></i> +998 (71) 262 35 40</li>
+                    <li><i class="fas fa-mobile-alt"></i> +998 (71) 262 99 72</li>
+                    <li><i class="fas fa-mobile-alt"></i> +998 (71) 262-70-71</li>
+
+                </ul>
+            </div>
+            <div class="footer_info_Map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5991.0742257979755!2d69.34224262932024!3d41.340677860706165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef52457a31bd9%3A0x6c09c925639a12e7!2z0JjQvdGB0YLQuNGC0YPRgiDQsdC40L7QvtGA0LPQsNC90LjRh9C10YHQutC-0Lkg0YXQuNC80LjQuCDQuNC80LXQvdC4INCw0LrQsNC00LXQvNC40LrQsCDQodC-0LTQuNC60L7QstCwINCeLtChLg!5e0!3m2!1sru!2s!4v1688042205604!5m2!1sru!2s"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
+
+    <script src = "{% static 'layout/js/script.js' %}"></script>
+    {% block script %}
+    {% endblock %}
+</body>
+</html>

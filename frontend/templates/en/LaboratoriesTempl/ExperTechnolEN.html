@@ -1,0 +1,78 @@
+{% extends 'main/layoutEN.html' %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'Laboratories/ExperTechnol/css/ExperTechnol.css' %}">
+{% endblock %}
+
+
+{% block title %}
+    ЭТЛen
+{% endblock %}
+
+
+{% block content %}
+<div class = "conteiner">
+    {% block LEVE_LB %}
+        {% if LEVE_LB %}
+            <div class = "LEVE_LB_div">
+                <button class = "LEVE_LB_btn">History</button>
+                <button class = "LEVE_LB_btn">Research</button>
+                <button class = "LEVE_LB_btn">Results</button>
+                <button class = "LEVE_LB_btn">Achievements</button>
+                <button class = "LEVE_LB_btn">Employees</button>
+                <button class = "LEVE_LB_btn">Publications</button>
+                <button class = "LEVE_LB_btn">Projects</button>
+                <button class = "LEVE_LB_btn">Services</button>
+                <button class = "LEVE_LB_btn">Contacts</button>
+            </div>
+            <link rel = "stylesheet" href = "{% static 'Laboratories/Laboratories.css' %}">
+        {% endif %}
+    {% endblock %}
+
+    <h1 class = "Name_html_now">Experimental and technological</h1>
+
+    <div class = "Laboratories_content">
+        <h2>Experimental and production laboratory</h2>
+        <h3>Head</h3>
+        <h2>Makhmudov Sardor Dzhalilovich, (PhD)</h2>
+
+        <h3>Laboratory history</h3>
+        <p>The experimental and production laboratory was created in 1973. During the existence of the laboratory, it was
+            headed by Ph.D. Ishbaev A.I., Doctor of Economics Kakharov A.K., Ph.D. Khaitbaev H.Kh., Doctor of Technical
+            Sciences Saidakhmedov U.A., Doctor of Chemical Sciences Tashmukhamedov M.S., and Doctor of Chemical Sciences
+            prof. Mavlyanov S.M. The laboratory operates a pilot production facility, where pilot batches of drugs are
+            produced using the technology developed in the laboratory on semi-industrial installations.</p>
+        <p>The pilot production enterprise (PPE) was organized in 1981, and since 1994 it has been operating as part of ETL.
+            The leaders of the PPE were Yusupov A.Sh. (from 1980 to 1987); Inogamov K. (from 1987-1989); Isaev N.H.
+            (from 1990 to 1994); Abdurakhmanov Sh.D. (from 1994 to 1996). This division of the institute developed a
+            waste-free technology for producing effective drugs from waste from the oil and fat industry of Uzbekistan. As a
+            result of this research, a “Method for obtaining an emulsifier for invert emulsion solutions” was developed
+            (Isaev Kh.I., Abdurakhmanov A.S.), a process for producing tar (gossypol resin) was developed, which was the
+            basis for the creation of preparations OGS-5 and IKM-1, which have antiviral activity against potato and tomato
+            viruses. Ph.D. Isaev Kh.I. and Ph.D. Yusupov A.Sh. A method has been developed for producing suspended sulfur
+            against spider mites. A large amount of work has been carried out to develop a technology for isolating gossypol
+            from cotton family plants and obtaining technical gossypol, pharmacopeial gossypol, anthranilate gossypol,
+            gossypoacetic acid (GAA) from technical gossypol by cold pressing (Ibragimov A.S., Otargaliev T., Saidakhmedov
+            U.A., Salikhov Sh.I.). ETL has developed methods for the synthesis of several lupinin derivatives with high
+            inhibitory activity towards hydrolytic enzymes and antiarrhythmic effects of distinct types of action (Khaitbaev
+            Kh.Kh., Abduvakhabov A.A.).</p>
+        <p>A simplified technology for obtaining the substances gossypol, batridene, and megosin has been developed
+            (Saidakhmedov U.A., Ibragimov A.S.), as well as the first and second stages of the technology for the synthesis
+            of winter and cotton bollworm pheromones ( Kholbekov O. Kh.). In its research, the laboratory traditionally
+            deals with the development and implementation into production of the technology of drugs created at the
+            institute - for medicine, the food industry, etc. Under the leadership of Doctor of Chemical Sciences.
+            Mavlyanova S.M. conducted studies of the chemical composition of polyphenols in over 120 plants. The chemical
+            composition and biological activity of the isolated compounds have been studied, and several effective antiviral
+            drugs have been created based on these compounds.</p>
+    </div>
+    
+
+    {% if LEVE_LB %}
+        <script src = "{% static 'Laboratories/ExperTechnol/js/ExperTechnolEN.js' %}"></script>
+    {% endif %}
+    
+</div>
+
+{% endblock %}
+

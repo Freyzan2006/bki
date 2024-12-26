@@ -1,0 +1,56 @@
+{% extends 'main/layoutRU.html' %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'Laboratories/KletkaTech/css/KletkaTech.css' %}">
+{% endblock %}
+
+
+{% block title %}
+    KletkaTechRU
+{% endblock %}
+
+
+{% block content %}
+<div class = "conteiner">
+    {% block LEVE_LB %}
+        {% if LEVE_LB %}
+            <div class = "LEVE_LB_div">
+                <button class = "LEVE_LB_btn">История</button>
+                <button class = "LEVE_LB_btn">Исследования</button>
+                <button class = "LEVE_LB_btn">Результаты</button>
+                <button class = "LEVE_LB_btn">Достижения</button>
+                <button class = "LEVE_LB_btn">Сотрудники</button>
+                <button class = "LEVE_LB_btn">Публикации</button>
+                <button class = "LEVE_LB_btn">Проекты</button>
+                <button class = "LEVE_LB_btn">Услуги</button>
+                <button class = "LEVE_LB_btn">Контакты</button>
+            </div>
+            <link rel = "stylesheet" href = "{% static 'Laboratories/Laboratories.css' %}">
+        {% endif %}
+    {% endblock %}
+
+    <h1 class = "Name_html_now">Клеточные технологии овощных и растительных культур</h1>
+
+    <div class = "Laboratories_content">
+        <h2>Лаборатория клеточных технологий овощных и растительных культур</h2>
+        <h3>Заведующий лабораторией</h3>
+        <h2>доктор химических наук, профессор Зиявитдинов Жамолитдин Фазлитдинович</h2>
+
+        <h3>История лаборатории</h3>
+        <p>Лаборатория является одной из самых молодых лабораторий института, которая была создана в 2018 году на базе
+            «Лаборатории клеточных технологий» в составе института.</p>
+        <p>Основное научное направление лаборатории является исследование молекулярно-биохимических механизмов
+            метаболических путей стресс устойчивых перспективных растений, определение молекулярно-биохимических
+            особенностей стрессоустойчивости, создание банка их генетического материала, внедрение перспективных растений в
+            in vitro культуру и адаптация их к абиотическим стрессам.</p>
+    </div>
+    
+
+    {% if LEVE_LB %}
+        <script src = "{% static 'Laboratories/KletkaTech/js/KletkaTechRU.js' %}"></script>
+    {% endif %}
+    
+</div>
+
+{% endblock %}

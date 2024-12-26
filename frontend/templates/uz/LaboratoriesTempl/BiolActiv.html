@@ -1,0 +1,62 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'Laboratories/BiolActiv/css/BiolActiv.css' %}">
+{% endblock %}
+
+
+{% block title %}
+    ЛБАМСeng
+{% endblock %}
+
+
+{% block content %}
+<div class = "conteiner">
+    {% block LEVE_LB %}
+        {% if LEVE_LB %}
+            <div class = "LEVE_LB_div">
+                <button class = "LEVE_LB_btn">Tarix</button>
+                <button class = "LEVE_LB_btn">Tadqiqotlar</button>
+                <button class = "LEVE_LB_btn">Natijalar</button>
+                <button class = "LEVE_LB_btn">Yutuqlar</button>
+                <button class = "LEVE_LB_btn">Xodimlar</button>
+                <button class = "LEVE_LB_btn">Nashrlar</button>
+                <button class = "LEVE_LB_btn">Loyiha</button>
+                <button class = "LEVE_LB_btn">Xizmatlar</button>
+                <button class = "LEVE_LB_btn">Kontaktlar</button>
+            </div>
+            <link rel = "stylesheet" href = "{% static 'Laboratories/Laboratories.css' %}">
+        {% endif %}
+    {% endblock %}
+
+    <h1 class = "Name_html_now">Biologik faol makromolekulyar tizimlar</h1>
+
+    <div class = "Laboratories_content">
+        <h2>Биологик фаол макромолекуляр тизимлар лабораторияси</h2>
+        <h3>Лаборатория мудири – к.ф.д., ета.и.х. Шомуротов Шавкат Абдуганиевич</h3>
+        <h3>+998 (97) 7140639; shsha@mail.ru</h3>
+
+        <h2>Тарихи</h2>
+
+        <p>Пахта целюлозаси кимёси ва техологияси илмий текшириш институти тарқатиб юборилганидан сўнг 1993 йилда “Целлюлоза
+            кимёси” лаборатрияси ЎзР ФА Биоорганик кимё институти таркибига киритилди. Лабораторияда қисқа вақт мобайнида,
+            к.ф.д., профессор А.С.Тураев раҳбарлигида полисахаридлар ва уларнинг ҳосилаларини кимёвий модификациялаш,
+            уларнинг молекуляр ва молекуляр уст структуралари ўрганиш, шунингдек, тибиий ва синтетик гидрофил полимерлар ва
+            улар асосида тиббиёт ва қишлоқ хўжалиги учун янги самарали препаратлар, йўналтирилган таъсирга эга дори
+            воситалари, белгиланган хусусиятли жарроҳлик воситалари олиш борасида кўплаб тадқиқотлар олиб борилди.
+            Лаборатория таркиби кенгайди ва бир қанча фан докторлари ва номзодлари етишиб чиқди. “Целлюлоза кимёси”
+            лабораторияси 2012 йилдан бошлаб “Полисахаридлар кимёси” лабораторияси деб номлана бошланди. Ҳозирги кунда
+            лаборатория макромолекуляр тизимлар ва уларнинг тузилиши ва биологик фаоллигини ўргиниш, «тузилиш-фаоллик»
+            боғлиқликларини аниқлаш, тиббиёт, фармацевтика ва қишлоқ хўжалаги учун макромолекуяр тизимлар яратиш билан
+            шуғулланади. Шу боис ҳозирда лаборатория “Биологик фаол макромолекуляр тизимлар” лабораторияси деб номланади.
+        </p>
+    </div>
+
+    {% if LEVE_LB %}
+        <script src = "{% static 'Laboratories/BiolActiv/js/BiolActiv.js' %}"></script>
+    {% endif %}
+    
+</div>
+
+{% endblock %}

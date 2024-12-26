@@ -1,0 +1,92 @@
+
+
+:root[data-theme = "white"] {
+    --BGHtml: white;
+    --ColorText: #000;
+    --FamalyTitle: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --FamalyText:  'Roboto Condensed', sans-serif;
+    --ActiveColor: rgb(58, 58, 204);
+    --NotActiveColor: #333;
+    --BG_itme: aliceblue;
+    --BG_menu: #333;
+    --Active_menu_color: aliceblue;
+}
+
+
+
+:root[data-theme = "dark"] {
+    --BGHtml: #333;
+    --ColorText: white;
+    --FamalyTitle: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --FamalyText:  'Roboto Condensed', sans-serif;
+    --ActiveColor: rgb(87, 86, 86);
+    --NotActiveColor: white;
+    --BG_itme: rgb(39, 38, 38);
+    --BG_menu: rgb(4, 75, 168);
+    --Active_menu_color: rgb(255, 255, 255);
+}
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}  
+
+.All_news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.All_news h1 {
+    font-family: var(--FamalyTitle);
+    color: var(--ColorText);
+    font-size: 40px;
+}
+
+.Novosti_info_All {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Novosti_info_All_div {
+    background-color: var(--BG_itme);
+    width: 300px;
+    height: auto;
+    border: solid 3px var(--BG_itme);
+    border-radius: 10px;
+    transition: 0.5s all ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.Novosti_info_All_div:hover {
+    border-color: var(--ActiveColor);
+    cursor: pointer;
+}
+
+.Novosti_info_All_div a {
+    border-radius: 10px;
+    background-color: var(--ActiveColor);
+    color: var(--ColorText);
+    padding: 15px;
+    transition: 0.5s all ease;
+}
+
+.Novosti_info_All_div a:hover {
+    background-color: rgb(231, 179, 5);
+}
+

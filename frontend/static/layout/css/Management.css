@@ -1,0 +1,15 @@
+.Supervisor {
+    text-decoration: none;
+}
+
+.Supervisor>img {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s transform ease;
+}
+
+.Supervisor>img:hover {
+    transform: scale(110%);
+    cursor: pointer;
+}

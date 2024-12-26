@@ -1,0 +1,13 @@
+
+.History {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.History h1 {
+    font-size: 40px;
+    font-weight: 600;
+    align-self: center;
+}
+

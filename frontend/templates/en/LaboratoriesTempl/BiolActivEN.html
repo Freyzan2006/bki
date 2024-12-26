@@ -1,0 +1,62 @@
+{% extends 'main/layoutEN.html' %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'Laboratories/BiolActiv/css/BiolActiv.css' %}">
+{% endblock %}
+
+
+{% block title %}
+    ЛБАМСeng
+{% endblock %}
+
+
+{% block content %}
+<div class = "conteiner">
+    {% block LEVE_LB %}
+        {% if LEVE_LB %}
+            <div class = "LEVE_LB_div">
+                <button class = "LEVE_LB_btn">History</button>
+                <button class = "LEVE_LB_btn">Research</button>
+                <button class = "LEVE_LB_btn">Results</button>
+                <button class = "LEVE_LB_btn">Achievements</button>
+                <button class = "LEVE_LB_btn">Employees</button>
+                <button class = "LEVE_LB_btn">Publications</button>
+                <button class = "LEVE_LB_btn">Projects</button>
+                <button class = "LEVE_LB_btn">Services</button>
+                <button class = "LEVE_LB_btn">Contacts</button>
+            </div>
+            <link rel = "stylesheet" href = "{% static 'Laboratories/Laboratories.css' %}">
+        {% endif %}
+    {% endblock %}
+
+    <h1 class = "Name_html_now">Biologically active macromolecular systems</h1>
+
+    <div class = "Laboratories_content">
+        <h2>Laboratory of Biologically Active Macromolecular Systems</h2>
+        <h3>(Chemistry of polysaccharides)</h3>
+        <h3>Head of the laboratory - Doctor of Chemical Sciences, Leading Researcher Shomurotov Shavkat Abduganievich</h3>
+        <h3>+998(97)7140639; shsha@mail.ru</h3>
+    
+        <h2>History</h2>
+    
+        <p>After the dissolution of the Research Institute of Chemistry and Technology of Cotton Pulp, in 1993
+            The Laboratory of Cellulose Chemistry became part of the Institute of Bioorganic Chemistry of the Academy of
+            Sciences of the Republic of Uzbekistan. In the laboratory under leadership of Doctor of Chemical Sciences,
+            Academician A.S. Turaev conducted research to study the characteristics of the chemical
+            transformation of polysaccharides and their derivatives, molecular and supramolecular structure, synthetic
+            hydrophilic polymers, to create new effective drugs, targeted drugs and surgical products with specified
+            properties based on them for use in medical practice and agriculture farm. In 2012, the “Cellulose Chemistry”
+            laboratory was renamed into the “Polysaccharide Chemistry” laboratory. In the laboratory is currently studying
+            macromolecular systems, their structure and biological activity, establishing the structure-activity
+            relationship, creating macromolecular systems for medicine, pharmaceuticals and agriculture. In this regard, the
+            laboratory was renamed into the laboratory of “Biological active macromolecular systems".</p>
+    </div>
+
+    {% if LEVE_LB %}
+        <script src = "{% static 'Laboratories/BiolActiv/js/BiolActivEN.js' %}"></script>
+    {% endif %}
+    
+</div>
+
+{% endblock %}

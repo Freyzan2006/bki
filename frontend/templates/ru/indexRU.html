@@ -1,0 +1,167 @@
+{% extends 'ru/layoutRU.html' %}
+{% load static %}
+
+
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'layout/css/index.css' %}">
+{% endblock %}
+
+{% block title %}
+    Институт биоорганической химии им. А.С.Садыкова, Академия наук Республики Узбекистан
+{% endblock %}
+
+
+
+{% block content %}
+   
+    <header class="header">
+        <div class="header__info conteiner">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" id="carousel-item_id">
+
+                    </div>
+                    <div class="carousel-item" id="carousel-item_id2">
+
+
+                    </div>
+
+                    <div class="carousel-item" id="carousel-item_id3">
+
+                    </div>
+                    <div class="carousel-item" id="carousel-item_id4">
+
+                    </div>
+                    <div class="carousel-item" id="carousel-item_id5">
+
+                    </div>
+                    <div class="carousel-item" id="carousel-item_id6">
+
+                    </div>
+                    <div class="carousel-item" id="carousel-item_id7">
+
+                    </div>
+                    <div class="carousel-item" id="carousel-item_id8">
+
+                    </div>
+                    <div class="carousel-item" id="carousel-item_id9">
+
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+                        aria-label="Slide 9"></button>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <section class="About">
+            <div class="About_info conteiner">
+                <h2 class="About_Title">
+                    Об институте
+                </h2>
+                <p class="About_Text">
+                    Институт является базовым научным учреждением в области 
+                    изучения взаимосвязи структуры жизненно-важных биомолекул 
+                    с их функциональной активностью и создания прорывных 
+                    технологий производства новых лекарственных препаратов 
+                    для медицины, стимуляторов, средств защиты растений и 
+                    других биообъектов для сельского хозяйства и пищевой 
+                    отрасли.
+                </p>
+                <p class="About_Text">
+                    Деятельность Института направлена на изучение взаимосвязи 
+                    структуры жизненно-важных биомолекул с их функциональной 
+                    активностью и создания прорывных технологий производства 
+                    новых лекарственных препаратов для медицины, стимуляторов, 
+                    средств защиты растений и других биообъектов для сельского 
+                    хозяйства и пищевой отрасли.
+                </p>
+
+                <div class = "About_info_img">
+                    <img class = "About_info_img_id" src="{% static 'layout/images/main/fasad.jpg' %}" alt="">
+                    <img class = "About_info_img_id" src="{% static 'layout/images/main/perspect.jpg' %}" alt="" >
+                </div>
+            </div>
+        </section>
+        <section class="Novosti">
+            <div class="Novosti_Title conteiner">
+                <h2>
+                    Объявления 
+                </h2>
+            </div>
+        
+            {% block info %}
+                <div class="Novosti_info conteiner">
+                    {% if news %}
+                        {% for el in news %} 
+                                <div class = "Novosti_info_div">
+                                    <h3>{{ el.title }}</h3>
+                                    <p>{{ el.data }}</p>
+                                    <p>{{ el.anons }}</p>
+                                    <a href = "{% url 'news-detail_RU' el.id %}" class = "Novosti_info_div_btn">Читать подробние...</a>
+                                </div>
+                        {% endfor %}
+                    {% else %}
+                        <p>Нет новостей</p>
+                    {% endif %}
+                </div>
+                <a href = "{% url 'news_home_RU' %}" class = "Novosti_info_div_btn">ПОСЛЕДНИЕ НОВОСТИ ...</a>
+            {% endblock %}
+           
+        </section>
+
+        <section class="Admin_GUI conteiner">
+            <input type="checkbox" id="Form_btn">
+            <label id="Form_label" for="Form_btn">
+                <i class="fas fa-arrow-up"></i>
+            </label>
+
+            <form id="Admin_GUI_form">
+                <input id="Admin_GUI_form_Name" type="text" placeholder="Name">
+                <input id="Admin_GUI_form_password" type="password" placeholder="password">
+                <button id="Admin_GUI_form_btn">
+                    Kirish
+                </button>
+            </form>
+        </section>
+    </main>
+    
+    <script src = "{% static 'layout/js/index.js' %}"></script>
+    {% block script %}
+        <script src="{% static 'lib/bootstrap/bootstrap.js' %}"></script>
+    {% endblock %}
+
+{% endblock %}
+
+

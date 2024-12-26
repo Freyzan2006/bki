@@ -1,0 +1,410 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    
+    background-color: var(--Active_color2);
+    
+}
+
+.header__info {
+    max-width: 1980px !important;
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 0 15px;
+   
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+
+}
+
+.fa-bars {
+    font-size: 30px;
+    color: #333;
+    padding:  5px;
+    border-radius: 10px 5px;
+    cursor: pointer;
+}
+
+
+
+#carouselExampleCaptions {
+    width: 100%;
+    
+}
+
+#carouselExampleCaptions .carousel-inner {
+  
+    
+    min-height: 300px; 
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#carouselExampleCaptions #carousel-item_id {
+    max-width: 1980px !important;
+    width: 100% !important;
+    height: 300px;
+    background-image: url(../images/header/Lenta/img.jpg);
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-size:  cover;
+}
+
+
+#carouselExampleCaptions #carousel-item_id2 {
+    max-width: 1980px !important;
+    width: 100% !important;
+    height: 300px;
+    background-image: url(../images/header/Lenta/img2.jpg);
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-size:  cover;
+}
+
+#carouselExampleCaptions #carousel-item_id3 {
+    max-width: 1980px !important;
+    width: 100% !important;
+    height: 300px;
+    background-image: url(../images/header/Lenta/img3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+}
+
+#carouselExampleCaptions #carousel-item_id4 {
+    max-width: 1980px !important;
+    width: 100% !important;
+    height: 300px;
+    background-image: url(../images/header/Lenta/img4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+}
+
+#carouselExampleCaptions #carousel-item_id5 {
+    max-width: 1980px !important;
+    width: 100% !important;
+    height: 300px;
+    background-image: url(../images/header/Lenta/img5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    
+}
+
+#carouselExampleCaptions #carousel-item_id6 {
+    max-width: 1980px !important;
+    width: 100% !important;
+    height: 300px;
+    background-image: url(../images/header/Lenta/img6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+}
+
+#carouselExampleCaptions #carousel-item_id7 {
+    max-width: 1980px !important;
+    width: 100% !important;
+    height: 300px;
+    background-image: url(../images/header/Lenta/img7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+}
+
+#carouselExampleCaptions #carousel-item_id8 {
+    max-width: 1980px !important;
+    width: 100% !important;
+    height: 300px;
+    background-image: url(../images/header/Lenta/img8.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+}
+
+#carouselExampleCaptions #carousel-item_id9 {
+    max-width: 1980px !important;
+    width: 100% !important;
+    height: 300px;
+    background-image: url(../images/header/Lenta/img9.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+}
+
+  
+
+#main {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.About {
+    width: 100%;
+    min-height: 200px;
+    background-color: var(--BGHtml);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.About_info {
+    max-width: 1580px !important;
+    width: 100%;
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.About_Text {
+    font-family: var(--FamalyText);
+}
+
+.About_info_img {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.About_info_img img {
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    transition: 0.5s ease transform;
+}
+
+.About_info_img img:hover {
+    transform: scale(102%);
+    cursor: pointer;
+}
+
+.About_info_img .About_info_img_id.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+
+.Novosti {
+    width: 100%;
+    min-height: 300px;
+    
+    border-radius: 10px;
+    background-color: var(--BG_itme);
+   
+    
+    padding: 15px 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.Novosti_Title {
+    width: auto;
+    height: auto;
+    border-left: solid 3px var(--ActiveColor);
+    padding-left: 20px;
+    
+}
+
+.Novosti_Title h2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Novosti_Title h2 span {
+    font-size: 15px;
+    color: var(--ColorText);
+}
+ 
+.Novosti_info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    
+}
+
+.Novosti_info_div {
+    background-color: var(--BGHtml);
+    color: var(--ColorText);
+    border-radius: 10px;
+    font-family: var(--FamalyText);
+    padding: 15px;
+    
+    max-width: 350px;
+    width: 100%;
+    min-width: 350px;
+    min-height: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Novosti_info_div_btn {
+    border-radius: 10px;
+    max-width: 200px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--FamalyText);
+    color: white;
+    text-decoration: none;
+    background-color: var(--ActiveColor);
+
+    transition: 0.5s all ease;
+}
+
+.Novosti_info_div_btn:hover {
+    background-color: var(--Active_color2);
+    transform: scale(105%);
+    cursor: pointer;
+    color: white;
+}
+
+
+
+.Admin_GUI {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#Form_btn {
+    display: none;
+}
+
+#Form_label {
+    cursor: pointer;
+    font-size: 30px;
+    transition: 0.5s ease-in-out;
+}
+
+#Form_label:hover {
+    color: var(--ActiveColor);
+}
+
+#Form_btn:checked~#Admin_GUI_form {
+    transform: translateY(0);
+    height: auto;
+}
+
+#Form_btn:checked~#Form_label {
+    transform: rotate(180deg);
+}
+
+#Admin_GUI_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transform: translateY(120%);
+    transition: 0.5s;
+    padding: 20px;
+    height: 100px;
+}
+
+#Admin_GUI_form_Name,
+#Admin_GUI_form_password {
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: solid 1px var(--ActiveColor);
+    padding-left: 15px;
+    width: 200px;
+    height: 50px;
+    color: var(--ActiveColor);
+}
+
+#Admin_GUI_form_btn {
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    background-color: rgb(32, 32, 32);
+    border: 0;
+    border: solid 1px rgb(32, 32, 32);
+    color: aliceblue;
+}
+
+#Admin_GUI_form_btn:hover {
+    border-radius: 0 10px 0 10px;
+    border-color: var(--ActiveColor);
+    transform: scale(110%);
+}
+
+
+
+@media (max-width: 730px) {
+    main .About .About_info_img {
+        
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 420px) {
+    main .About .About_info_img img {
+        max-width: 420px;
+        width: 100%;
+        height: 150px;
+    }
+}
+
+@media (max-width: 815px) {
+    .Novosti_info {
+        justify-content: center;
+    }
+}

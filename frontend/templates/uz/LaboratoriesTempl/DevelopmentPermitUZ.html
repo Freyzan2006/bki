@@ -1,0 +1,84 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'Laboratories/DevelopmentPermit/css/DevelopmentPermit.css' %}">
+{% endblock %}
+
+
+{% block title %}
+    chinaUZ
+{% endblock %}
+
+
+{% block content %}
+<div class = "conteiner">
+    {% block LEVE_LB %}
+        {% if LEVE_LB %}
+            <div class = "LEVE_LB_div">
+                <button class = "LEVE_LB_btn">Tarix</button>
+                <button class = "LEVE_LB_btn">Tadqiqotlar</button>
+                <button class = "LEVE_LB_btn">Natijalar</button>
+                <button class = "LEVE_LB_btn">Yutuqlar</button>
+                <button class = "LEVE_LB_btn">Xodimlar</button>
+                <button class = "LEVE_LB_btn">Nashrlar</button>
+                <button class = "LEVE_LB_btn">Loyiha</button>
+                <button class = "LEVE_LB_btn">Xizmatlar</button>
+                <button class = "LEVE_LB_btn">Kontaktlar</button>
+            </div>
+            <link rel = "stylesheet" href = "{% static 'Laboratories/Laboratories.css' %}">
+        {% endif %}
+    {% endblock %}
+
+    <h1 class = "Name_html_now">Biopolimerlar asosida tabiiy dori vositalarini ishlab chiqish</h1>
+
+    <div class = "Laboratories_content">
+        <h2>Биополимерлар асосида табийи дори воситаларини ишлаб чикиш лабораторияси</h2>
+        <h2>Ўзбекистон-Хитой қўшма лабораторияси «Биополимерларнинг замонавий технологиялари»</h2>
+        <h3>Лаборатория мудири</h3>
+        <h3>Мирзаахмедов Шарафитдин Яшинович - кимё фанлари номзоди, катта илмий ходим</h3>
+    
+        <p>Лаборатория Ўзбекистон Фанлар Академиясининг Биоорганик кимё институти ва Хитой Фанлар Академиясининг Шинжон
+            физик кимёвий техника институти ўртасида 2014 йилнинг 17 март санасида, хамда Биоорганик кимё институти ва
+            Шанхай Материа ва Медика институти ўртасида 2017 йилнинг 15 ноябрь санасида “Биополимерлар асосида табиий
+            дорилар яратишни тадқиқ қилиш” бўйича имзоланган келишувга мувофиқ ташкиллаштирилган.</p>
+    
+        
+    
+        <h4>Лабораториянинг молиявий манбаалари</h4>
+        <ol type="1">
+            <li> Ўзбекистон Республикаси Инновацион ривожланиш вазирлиги томонидан эълон қилинган танловларда қанташиб ғолиб
+                бўлган илмий лойиҳалардан тушадиган маблағлар;</li>
+            <li> Хитой Ҳалқ Республикаси Фан ва Технологиялар қўмитаси, Хитой Фанлар Академиясининг фондлари томонидан эълон
+                қилинган танловларда қанташиб ғолиб бўлган илмий лойиҳалардан тушадиган маблағлар;</li>
+            <li> Хитой Фанлар Академиясининг “Central Asian Research and Production Centre of Biologically Active Compounds”
+                венчур компанияси томонидан тематик илмий лойиҳаларга ажратиладиган маблағлар;</li>
+            <li> “China-Uzbekistan Medicine Technical Park” МЧЖ ХК томонидан берилган илмий буюртмалар;</li>
+            <li> Турли ташкилотлар билан тузиладиган хўжалик шартномалари;</li>
+            <li> Қонунда тақиқланмаган бошқа фаолият турларидан келиб тушадиган даромадлар.</li>
+        </ol>
+    </div>
+    <div class = "Laboratories_content">
+        <img src="{% static 'Laboratories/DevelopmentPermit/image/sxema-china-uzb.png' %}" alt="схема лабы" width="800">
+        <h3>Илмий алокалар</h3>
+        <ul style="list-style-type:none;">
+            <li><img src="{% static 'Laboratories/DevelopmentPermit/image/Haji_Akber.png' %}" alt="">
+                Haji Akber Aisa – профессор, Шинжон физик кимёвий техника институти. h-index = 40</li>
+            <li><img src="{% static 'Laboratories/DevelopmentPermit/image/Ao_Zhang.png' %}" alt="">
+                Ao Zhang – профессор, Шанхай Материа ва Медика институти. h-index = 28</li>
+            <li><img src="{% static 'Laboratories/DevelopmentPermit/image/Liu_Hong.png' %}" alt="">
+                Liu Hong – профессор, Шанхай Материа ва Медика институти. h-index = 32</li>
+            <li><img src="{% static 'Laboratories/DevelopmentPermit/image/Yongzhuo_Huang.png' %}" alt="">
+                Yongzhuo Huang – профессор, Шанхай Материа ва Медика институти. h-index = 35</li>
+            <li><img src="{% static 'Laboratories/DevelopmentPermit/image/Wei_Huang.png' %}" alt="">
+                Wei Huang – профессор, Шанхай Материа ва Медика институти. h-index = 30</li>
+        </ul>
+    </div>
+
+    {% if LEVE_LB %}
+        <script src = "{% static 'Laboratories/DevelopmentPermit/js/DevelopmentPermit.js' %}"></script>
+    {% endif %}
+    
+</div>
+
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends 'main/layoutEN.html' %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'Laboratories/Pharmacology/css/Pharmacology.css' %}">
+{% endblock %}
+
+
+{% block title %}
+    ЛФСБАВen
+{% endblock %}
+
+
+{% block content %}
+<div class = "conteiner">
+    {% block LEVE_LB %}
+        {% if LEVE_LB %}
+            <div class = "LEVE_LB_div">
+                <button class = "LEVE_LB_btn">History</button>
+                <button class = "LEVE_LB_btn">Research</button>
+                <button class = "LEVE_LB_btn">Results</button>
+                <button class = "LEVE_LB_btn">Achievements</button>
+                <button class = "LEVE_LB_btn">Employees</button>
+                <button class = "LEVE_LB_btn">Publications</button>
+                <button class = "LEVE_LB_btn">Projects</button>
+                <button class = "LEVE_LB_btn">Services</button>
+                <button class = "LEVE_LB_btn">Contacts</button>
+            </div>
+            <link rel = "stylesheet" href = "{% static 'Laboratories/Laboratories.css' %}">
+        {% endif %}
+    {% endblock %}
+
+    <h1 class = "Name_html_now">Pharmacology and screening of biologically active substances</h1>
+
+    <div class = "Laboratories_content">
+        <h2>Laboratory of pharmacology and screening of biologically active substances</h2>
+        <h3>Head of the laboratory</h3>
+        <h2>Tagayalieva Nigora Abdunabievna</h2>
+    
+        <h2>History of the laboratory</h2>
+        <p>The Pharmacology Laboratory was established in 1973 on the basis of the Department of Bioorganic Chemistry at the
+            Academy of Sciences of Uzbekistan. In 1977, the department was renamed the Institute of Bioorganic Chemistry.
+            The first head of the pharmacology laboratory was Professor Nosyrov Sanjar Haidarovich, who led the laboratory
+            until 1994. Under his leadership, more than 20 candidates of sciences in the specialty of pharmacology were
+            prepared, 2 monographs were published. Laboratory staff were trained at the Department of "Pharmacology and
+            General Toxicology" of the Leningrad Sanitary and Hygienic Medical Institute of Russia under the guidance of
+            Professor P.P.Denisenko, 2nd Medical Institute, under the guidance of Professor Efimov S.A., Institute of
+            Epidemiology and Microbiology named after N.F. Gamalei AMS Russia, Institute of Surgery named after A.V.
+            Vishnevsky AMS et al . Since 1994, the laboratory was headed by Dr Isanbayev Chingiz Ildarovich, DS, in
+            2002-2010, by Dr Mirzaev Yuri Rakhmanovich, in 2010-2018 – by Dr Inogamov Utkir Kudratullayevich.</p>
+        <p> From the moment of its organization to the present, the laboratory has been conducting studies of the
+            pharmacological activity of various compounds of animal and plant origin obtained by the staff of the Institute
+            of Bioorganic Chemistry: alkaloids, polyphenols, deterpenoids, flavonoids, proteins and peptides,
+            polysaccharides, as well as their complexes, semi-synthetic analogues, conjugates, etc.</p>
+        <p> A vivarium providing the institute with four types of experimental animals (rabbits, guinea pigs, rats, mice)
+            operates for the full-fledged work of the laboratory.</p>
+    </div>
+
+    {% if LEVE_LB %}
+        <script src = "{% static 'Laboratories/Pharmacology/js/PharmacologyEN.js' %}"></script>
+    {% endif %}
+    
+</div>
+
+{% endblock %}
