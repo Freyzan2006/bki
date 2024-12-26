@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-no3vvainmcp(!)^g@46!b#glwv#x##m=6s-=hn6qvs^+l4#*fo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bki.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -124,7 +124,7 @@ USE_TZ = True
 STATIC_URL = "/static/"
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static/",
+    BASE_DIR / "static",
 ]
 
 # Default primary key field type
