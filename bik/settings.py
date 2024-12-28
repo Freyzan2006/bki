@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-no3vvainmcp(!)^g@46!b#glwv#x##m=6s-=hn6qvs^+l4#*fo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bki.onrender.com', 'localhost', '127.0.0.1']
+
 
 
 # Application definition
@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     
+    "corsheaders"
+    
     "main.apps.MainConfig",
     "frontend.apps.FrontendConfig",
     "news.apps.NewsConfig"
@@ -46,6 +48,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "corsheaders.middleware.CoresMiddleware"
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -126,10 +129,16 @@ STATIC_URL = "/static/"
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-    "/opt/render/project/src/static"
 ]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+
+CORS_ALLOW_HEADERS = ['*']
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ORIGIN_ALLOW_ALL = True
+ALLOWED_HOSTS = ['*']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
