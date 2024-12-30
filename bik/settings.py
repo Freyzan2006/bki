@@ -138,7 +138,7 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 CORS_ALLOW_HEADERS = ['*']
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ORIGIN_ALLOW_ALL = True
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
