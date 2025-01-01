@@ -82,6 +82,23 @@
                 <div class="dropdown">
                     <button class="dropbtn">About the institute <i class="fas fa-chevron-down dropdown_icon"></i></button>
                     <div class="dropdown-content">
+
+                        <div class="dropdown2">
+                            <button class="dropbtn2">Laboratories</button>
+                            <div class="dropdown-content2" style = "width: 300px">
+                                <a href = "{% url 'Chemistry_of_proteins_and_peptidesEN' %}">Chemistry of proteins and peptides</a>  
+                                <a href = "{% url 'BiolActivEN' %}">Biologically active macromolecular systems</a>
+                                <a>Enzyme chemistry</a>
+                                <a>Plant cytoprotectors</a>
+                                <a>Low molecular weight biologically active compounds</a>
+                                <a>Complex connections</a>
+                                <a href = "{% url 'ExperTechnolEN' %}">Experimental and technological</a>
+                                <a href = "{% url 'PharmacologyEN' %}">Pharmacology and screening of biologically active substances</a>
+                                <a href = "{% url 'KletkaTechEN' %}">Cellular technologies of vegetable and plant crops</a>
+                                <a href = "{% url 'DevelopmentPermitEN' %}">Development of natural medicines based on biopolymers</a>
+                            </div>
+                        </div>
+
                         
                         <div class="dropdown2">
                             <button class="dropbtn2">History</button>
@@ -95,21 +112,7 @@
                         <a href="{% url 'SciDirectionEN' %}">Scientific direction</a>
                         
 
-                        <div class="dropdown2">
-                            <button class="dropbtn2">Laboratories</button>
-                            <div class="dropdown-content2">
-                                <a href = "{% url 'Chemistry_of_proteins_and_peptidesEN' %}">Chemistry of proteins and peptides</a>  
-                                <a href = "{% url 'BiolActivEN' %}">Biologically active macromolecular systems</a>
-                                <a>Enzyme chemistry</a>
-                                <a>Plant cytoprotectors</a>
-                                <a>Low molecular weight biologically active compounds</a>
-                                <a>Complex connections</a>
-                                <a href = "{% url 'ExperTechnolEN' %}">Experimental and technological</a>
-                                <a href = "{% url 'PharmacologyEN' %}">Pharmacology and screening of biologically active substances</a>
-                                <a href = "{% url 'KletkaTechEN' %}">Cellular technologies of vegetable and plant crops</a>
-                                <a href = "{% url 'DevelopmentPermitEN' %}">Development of natural medicines based on biopolymers</a>
-                            </div>
-                        </div>
+
 
                         <a href="#!">Achievements</a>
                         <a href="#!">Applied developments and patents</a>
@@ -165,6 +168,7 @@
                         <a href="#!">Ссылка 21</a>
                     </div>
                 </div>
+                
             </menu>
         </section>
     </nav>
