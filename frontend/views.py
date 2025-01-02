@@ -84,7 +84,7 @@ def History(request):
 
     
 
-    return render(request, "History/History/History.html", {"list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "uz/HistoryUZ.html", {"list_GUI_left": list_GUI_left, "language": language})
 
 def HistoryRU(request):
     list_GUI_left = {
@@ -93,12 +93,12 @@ def HistoryRU(request):
     }
 
     language = {
-        "O'zb": "/History",
-        "Рус": "/RU/HistoryRU",
-        "Eng": "/EN/HistoryEN"
+        "O'zb": "/uz/HistoryUZ",
+        "Рус": "/ru/HistoryRU",
+        "Eng": "/en/HistoryEN"
     }
 
-    return render(request, "History/History/HistoryRU.html", {"list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "ru/HistoryRU.html", {"list_GUI_left": list_GUI_left, "language": language})
 
 def HistoryEN(request):
     list_GUI_left = {
@@ -107,12 +107,12 @@ def HistoryEN(request):
     }
 
     language = {
-        "O'zb": "/History",
-        "Рус": "/RU/HistoryRU",
-        "Eng": "/EN/HistoryEN"
+        "O'zb": "/uz/HistoryUZ",
+        "Рус": "/ru/HistoryRU",
+        "Eng": "/en/HistoryEN"
     }
 
-    return render(request, "History/History/HistoryEN.html", {"list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "en/HistoryEN.html", {"list_GUI_left": list_GUI_left, "language": language})
 
 
 
@@ -124,12 +124,12 @@ def Directors(request):
     }
 
     language = {
-        "O'zb": "/Directors",
-        "Рус": "/RU/DirectorsRU",
-        "Eng": "/EN/DirectorsEN"
+        "O'zb": "/uz/DirectorsUZ",
+        "Рус": "/ru/DirectorsRU",
+        "Eng": "/en/DirectorsEN"
     }
 
-    return render(request, "History/Directors/Directors.html", {"list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "uz/DirectorsUZ.html", {"list_GUI_left": list_GUI_left, "language": language})
 
 def DirectorsRU(request):
     list_GUI_left = {
@@ -138,12 +138,12 @@ def DirectorsRU(request):
     }
 
     language = {
-        "O'zb": "/Directors",
-        "Рус": "/RU/DirectorsRU",
-        "Eng": "/EN/DirectorsEN"
+        "O'zb": "/uz/DirectorsUZ",
+        "Рус": "/ru/DirectorsRU",
+        "Eng": "/en/DirectorsEN"
     }
 
-    return render(request, "History/Directors/DirectorsRU.html", {"list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "ru/DirectorsRU.html", {"list_GUI_left": list_GUI_left, "language": language})
 
 def DirectorsEN(request):
     list_GUI_left = {
@@ -152,99 +152,99 @@ def DirectorsEN(request):
     }
 
     language = {
-        "O'zb": "/Directors",
-        "Рус": "/RU/DirectorsRU",
-        "Eng": "/EN/DirectorsEN"
+        "O'zb": "/uz/DirectorsUZ",
+        "Рус": "/ru/DirectorsRU",
+        "Eng": "/en/DirectorsEN"
     }
     
-    return render(request, "History/Directors/DirectorsEN.html", {"list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "en/DirectorsEN.html", {"list_GUI_left": list_GUI_left, "language": language})
 
 
 
 def Management(request):
 
     language = {
-        "O'zb": "/Management",
-        "Рус": "/RU/ManagementRU",
-        "Eng": "/EN/ManagementEN"
+        "O'zb": "/uz/ManagementUZ",
+        "Рус": "/ru/ManagementRU",
+        "Eng": "/en/ManagementEN"
     }
     
-    return render(request, "Management/Management.html", {"language": language})
+    return render(request, "uz/ManagementUZ.html", {"language": language})
 
 def ManagementRU(request):
 
     language = {
-        "O'zb": "/Management",
-        "Рус": "/RU/ManagementRU",
-        "Eng": "/EN/ManagementEN"
+        "O'zb": "/uz/ManagementUZ",
+        "Рус": "/ru/ManagementRU",
+        "Eng": "/en/ManagementEN"
     }
     
-    return render(request, "Management/ManagementRU.html", {"language": language})
+    return render(request, "ru/ManagementRU.html", {"language": language})
 
 def ManagementEN(request):
 
     language = {
-        "O'zb": "/Management",
-        "Рус": "/RU/ManagementRU",
-        "Eng": "/EN/ManagementEN"
+        "O'zb": "/uz/ManagementUZ",
+        "Рус": "/ru/ManagementRU",
+        "Eng": "/en/ManagementEN"
     }
     
-    return render(request, "Management/ManagementEN.html", {"language": language})
+    return render(request, "en/ManagementEN.html", {"language": language})
 
 
 
 def SciDirection(request):
     language = {
-        "O'zb": "/SciDirection",
-        "Рус": "/RU/SciDirectionRU",
-        "Eng": "/EN/SciDirectionEN"
+        "O'zb": "/uz/SciDirectionUZ",
+        "Рус": "/ru/SciDirectionRU",
+        "Eng": "/en/SciDirectionEN"
     }
 
-    return render(request, "SciDirection/SciDirection.html", {"language": language})
+    return render(request, "uz/LaboratoriesTempl/SciDirectionUZ.html", {"language": language})
 
 def SciDirectionRU(request):
     language = {
-        "O'zb": "/SciDirection",
-        "Рус": "/RU/SciDirectionRU",
-        "Eng": "/EN/SciDirectionEN"
+        "O'zb": "/uz/SciDirectionUZ",
+        "Рус": "/ru/SciDirectionRU",
+        "Eng": "/en/SciDirectionEN"
     }
 
-    return render(request, "SciDirection/SciDirectionRU.html", {"language": language})
+    return render(request, "ru/LaboratoriesTempl/SciDirectionRU.html", {"language": language})
 
 def SciDirectionEN(request):
     language = {
-        "O'zb": "/SciDirection",
-        "Рус": "/RU/SciDirectionRU",
-        "Eng": "/EN/SciDirectionEN"
+        "O'zb": "/uz/SciDirectionUZ",
+        "Рус": "/ru/SciDirectionRU",
+        "Eng": "/en/SciDirectionEN"
     }
 
-    return render(request, "SciDirection/SciDirectionEN.html", {"language": language})
+    return render(request, "en/LaboratoriesTempl/SciDirectionEN.html", {"language": language})
 
 
 
 def Chemistry_of_proteins_and_peptides(request):
     list_GUI_left = {
-        "Oqsillar va peptidlar kimyosi": "Chemistry_of_proteins_and_peptides",
-        "Biologik faol makromolekulyar tizimlar": "BiolActiv",
+        "Oqsillar va peptidlar kimyosi": "Chemistry_of_proteins_and_peptidesUZ",
+        "Biologik faol makromolekulyar tizimlar": "BiolActivUZ",
         "Fermentlar kimyosi": "#!",
         "O'simliklar sitoprotektorlari": "#!",
         "Past molekulyar og'irlikdagi biologik faol birikmalar": "#!",
         "Murakkab ulanishlar": "#!",
-        "Eksperimental va texnologik": "ExperTechnol",
-        "Biologik faol moddalarning farmakologiyasi va skriningi": "Pharmacology",
-        "Sabzavot va o'simlik ekinlarining uyali texnologiyalari": "KletkaTech",
-        "Biopolimerlar asosida tabiiy dori vositalarini ishlab chiqish": "DevelopmentPermit"
+        "Eksperimental va texnologik": "ExperTechnolUZ",
+        "Biologik faol moddalarning farmakologiyasi va skriningi": "PharmacologyUZ",
+        "Sabzavot va o'simlik ekinlarining uyali texnologiyalari": "KletkaTechUZ",
+        "Biopolimerlar asosida tabiiy dori vositalarini ishlab chiqish": "DevelopmentPermitUZ"
     }
 
     language = {
-        "O'zb": "/Chemistry_of_proteins_and_peptides",
-        "Рус": "/RU/Chemistry_of_proteins_and_peptidesRU",
-        "Eng": "/EN/Chemistry_of_proteins_and_peptidesEN"
+        "O'zb": "/uz/Chemistry_of_proteins_and_peptidesUZ",
+        "Рус": "/ru/Chemistry_of_proteins_and_peptidesRU",
+        "Eng": "/en/Chemistry_of_proteins_and_peptidesEN"
     }
 
     LEVE_LB = True
 
-    return render(request, "Laboratories/Chemistry_of_proteins_and_peptides/Chemistry_of_proteins_and_eptidesEN.html", {"list_GUI_left": list_GUI_left, "LEVE_LB": LEVE_LB, "language": language})
+    return render(request, "uz/LaboratoriesTempl/ChemistryOfProteinsAndEptidesUZ.html", {"list_GUI_left": list_GUI_left, "LEVE_LB": LEVE_LB, "language": language})
 
 
 def Chemistry_of_proteins_and_peptidesRU(request):
@@ -262,14 +262,14 @@ def Chemistry_of_proteins_and_peptidesRU(request):
     }
 
     language = {
-        "O'zb": "/Chemistry_of_proteins_and_peptides",
-        "Рус": "/RU/Chemistry_of_proteins_and_peptidesRU",
-        "Eng": "/EN/Chemistry_of_proteins_and_peptidesEN"
+        "O'zb": "/uz/Chemistry_of_proteins_and_peptidesUZ",
+        "Рус": "/ru/Chemistry_of_proteins_and_peptidesRU",
+        "Eng": "/en/Chemistry_of_proteins_and_peptidesEN"
     }
 
     LEVE_LB = True
 
-    return render(request, "Laboratories/Chemistry_of_proteins_and_peptides/Chemistry_of_proteins_and_eptidesRU.html", {"list_GUI_left": list_GUI_left, "LEVE_LB": LEVE_LB, "language": language})
+    return render(request, "ru/LaboratoriesTempl/ChemistryOfProteinsAndEptidesRU.html", {"list_GUI_left": list_GUI_left, "LEVE_LB": LEVE_LB, "language": language})
 
 def Chemistry_of_proteins_and_peptidesEN(request):
     list_GUI_left = {
@@ -286,38 +286,38 @@ def Chemistry_of_proteins_and_peptidesEN(request):
     }
 
     language = {
-        "O'zb": "/Chemistry_of_proteins_and_peptides",
-        "Рус": "/RU/Chemistry_of_proteins_and_peptidesRU",
-        "Eng": "/EN/Chemistry_of_proteins_and_peptidesEN"
+        "O'zb": "/uz/Chemistry_of_proteins_and_peptidesUZ",
+        "Рус": "/ru/Chemistry_of_proteins_and_peptidesRU",
+        "Eng": "/en/Chemistry_of_proteins_and_peptidesEN"
     }
 
     LEVE_LB = True
 
-    return render(request, "Laboratories/Chemistry_of_proteins_and_peptides/Chemistry_of_proteins_and_eptidesEN.html", {"list_GUI_left": list_GUI_left, "LEVE_LB": LEVE_LB, "language": language})
+    return render(request, "en/LaboratoriesTempl/ChemistryOfProteinsAndEptidesEN.html", {"list_GUI_left": list_GUI_left, "LEVE_LB": LEVE_LB, "language": language})
 
 
 def BiolActiv(request):
     list_GUI_left = {
-        "Oqsillar va peptidlar kimyosi": "Chemistry_of_proteins_and_peptides",
-        "Biologik faol makromolekulyar tizimlar": "BiolActiv",
+        "Oqsillar va peptidlar kimyosi": "Chemistry_of_proteins_and_peptidesUZ",
+        "Biologik faol makromolekulyar tizimlar": "BiolActivUZ",
         "Fermentlar kimyosi": "#!",
         "O'simliklar sitoprotektorlari": "#!",
         "Past molekulyar og'irlikdagi biologik faol birikmalar": "#!",
         "Murakkab ulanishlar": "#!",
-        "Eksperimental va texnologik": "ExperTechnol",
-        "Biologik faol moddalarning farmakologiyasi va skriningi": "Pharmacology",
-        "Sabzavot va o'simlik ekinlarining uyali texnologiyalari": "KletkaTech",
-        "Biopolimerlar asosida tabiiy dori vositalarini ishlab chiqish": "DevelopmentPermit"
+        "Eksperimental va texnologik": "ExperTechnolUZ",
+        "Biologik faol moddalarning farmakologiyasi va skriningi": "PharmacologyUZ",
+        "Sabzavot va o'simlik ekinlarining uyali texnologiyalari": "KletkaTechUZ",
+        "Biopolimerlar asosida tabiiy dori vositalarini ishlab chiqish": "DevelopmentPermitUZ"
     }
 
     language = {
-        "O'zb": "/BiolActiv",
+        "O'zb": "/uz/BiolActivUZ",
         "Рус": "/RU/BiolActivRU",
         "Eng": "/EN/BiolActivEN"
     }
 
     LEVE_LB = True
-    return render(request, "Laboratories/BiolActiv/BiolActiv.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "uz/LaboratoriesTempl/BiolActiv/BiolActivUZ.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
 
 def BiolActivRU(request):
     list_GUI_left = {
@@ -334,13 +334,13 @@ def BiolActivRU(request):
     }
 
     language = {
-        "O'zb": "/BiolActiv",
-        "Рус": "/RU/BiolActivRU",
-        "Eng": "/EN/BiolActivEN"
+        "O'zb": "/uz/BiolActivUZ",
+        "Рус": "/ru/BiolActivRU",
+        "Eng": "/en/BiolActivEN"
     }
 
     LEVE_LB = True
-    return render(request, "Laboratories/BiolActiv/BiolActivRU.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "ru/LaboratoriesTempl/BiolActivRU.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
 
 def BiolActivEN(request):
     list_GUI_left = {
@@ -357,36 +357,36 @@ def BiolActivEN(request):
     }
 
     language = {
-        "O'zb": "/BiolActiv",
-        "Рус": "/RU/BiolActivRU",
-        "Eng": "/EN/BiolActivEN"
+        "O'zb": "/uz/BiolActivUZ",
+        "Рус": "/ru/BiolActivRU",
+        "Eng": "/en/BiolActivEN"
     }
 
     LEVE_LB = True
-    return render(request, "Laboratories/BiolActiv/BiolActivEN.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "en/LaboratoriesTempl/BiolActivEN.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
 
 def ExperTechnol(request):
     list_GUI_left = {
-        "Oqsillar va peptidlar kimyosi": "Chemistry_of_proteins_and_peptides",
-        "Biologik faol makromolekulyar tizimlar": "BiolActiv",
+        "Oqsillar va peptidlar kimyosi": "Chemistry_of_proteins_and_peptidesUZ",
+        "Biologik faol makromolekulyar tizimlar": "BiolActivUZ",
         "Fermentlar kimyosi": "#!",
         "O'simliklar sitoprotektorlari": "#!",
         "Past molekulyar og'irlikdagi biologik faol birikmalar": "#!",
         "Murakkab ulanishlar": "#!",
-        "Eksperimental va texnologik": "ExperTechnol",
-        "Biologik faol moddalarning farmakologiyasi va skriningi": "Pharmacology",
-        "Sabzavot va o'simlik ekinlarining uyali texnologiyalari": "KletkaTech",
-        "Biopolimerlar asosida tabiiy dori vositalarini ishlab chiqish": "DevelopmentPermit"
+        "Eksperimental va texnologik": "ExperTechnolUZ",
+        "Biologik faol moddalarning farmakologiyasi va skriningi": "PharmacologyUZ",
+        "Sabzavot va o'simlik ekinlarining uyali texnologiyalari": "KletkaTechUZ",
+        "Biopolimerlar asosida tabiiy dori vositalarini ishlab chiqish": "DevelopmentPermitUZ"
     }
 
     language = {
-        "O'zb": "/ExperTechnol",
-        "Рус": "/RU/ExperTechnolRU",
-        "Eng": "/EN/ExperTechnolEN"
+        "O'zb": "/uz/ExperTechnolUZ",
+        "Рус": "/ru/ExperTechnolRU",
+        "Eng": "/en/ExperTechnolEN"
     }
 
     LEVE_LB = True
-    return render(request, "Laboratories/ExperTechnol/ExperTechnol.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "uz/LaboratoriesTempl/ExperTechnol.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
 
 def ExperTechnolRU(request):
     list_GUI_left = {
@@ -403,13 +403,13 @@ def ExperTechnolRU(request):
     }
 
     language = {
-        "O'zb": "/ExperTechnol",
-        "Рус": "/RU/ExperTechnolRU",
-        "Eng": "/EN/ExperTechnolEN"
+        "O'zb": "/uz/ExperTechnolUZ",
+        "Рус": "/ru/ExperTechnolRU",
+        "Eng": "/en/ExperTechnolEN"
     }
-
+    
     LEVE_LB = True
-    return render(request, "Laboratories/ExperTechnol/ExperTechnolRU.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "ru/LaboratoriesTempl/ExperTechnolRU.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
 
 def ExperTechnolEN(request):
     list_GUI_left = {
@@ -426,38 +426,38 @@ def ExperTechnolEN(request):
     }
 
     language = {
-        "O'zb": "/ExperTechnol",
-        "Рус": "/RU/ExperTechnolRU",
-        "Eng": "/EN/ExperTechnolEN"
+        "O'zb": "/uz/ExperTechnolUZ",
+        "Рус": "/ru/ExperTechnolRU",
+        "Eng": "/en/ExperTechnolEN"
     }
 
     LEVE_LB = True
-    return render(request, "Laboratories/ExperTechnol/ExperTechnolEN.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "en/LaboratoriesTempl/ExperTechnolEN.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
 
 
 
 def Pharmacology(request):
     list_GUI_left = {
-        "Oqsillar va peptidlar kimyosi": "Chemistry_of_proteins_and_peptides",
-        "Biologik faol makromolekulyar tizimlar": "BiolActiv",
+        "Oqsillar va peptidlar kimyosi": "Chemistry_of_proteins_and_peptidesUZ",
+        "Biologik faol makromolekulyar tizimlar": "BiolActivUZ",
         "Fermentlar kimyosi": "#!",
         "O'simliklar sitoprotektorlari": "#!",
         "Past molekulyar og'irlikdagi biologik faol birikmalar": "#!",
         "Murakkab ulanishlar": "#!",
-        "Eksperimental va texnologik": "ExperTechnol",
-        "Biologik faol moddalarning farmakologiyasi va skriningi": "Pharmacology",
-        "Sabzavot va o'simlik ekinlarining uyali texnologiyalari": "KletkaTech",
-        "Biopolimerlar asosida tabiiy dori vositalarini ishlab chiqish": "DevelopmentPermit"
+        "Eksperimental va texnologik": "ExperTechnolUZ",
+        "Biologik faol moddalarning farmakologiyasi va skriningi": "PharmacologyUZ",
+        "Sabzavot va o'simlik ekinlarining uyali texnologiyalari": "KletkaTechUZ",
+        "Biopolimerlar asosida tabiiy dori vositalarini ishlab chiqish": "DevelopmentPermitUZ"
     }
 
     language = {
-        "O'zb": "/Pharmacology",
-        "Рус": "/RU/PharmacologyRU",
-        "Eng": "/EN/PharmacologyEN"
+        "O'zb": "/uz/PharmacologyUZ",
+        "Рус": "/ru/PharmacologyRU",
+        "Eng": "/en/PharmacologyEN"
     }
 
     LEVE_LB = True
-    return render(request, "Laboratories/Pharmacology/Pharmacology.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "uz/LaboratoriesTempl/PharmacologyUZ.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
 
 def PharmacologyRU(request):
     list_GUI_left = {
@@ -474,13 +474,13 @@ def PharmacologyRU(request):
     }
 
     language = {
-        "O'zb": "/Pharmacology",
-        "Рус": "/RU/PharmacologyRU",
-        "Eng": "/EN/PharmacologyEN"
+        "O'zb": "/uz/PharmacologyUZ",
+        "Рус": "/ru/PharmacologyRU",
+        "Eng": "/en/PharmacologyEN"
     }
 
     LEVE_LB = True
-    return render(request, "Laboratories/Pharmacology/PharmacologyRU.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "ru/LaboratoriesTempl/PharmacologyRU.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
 
 
 def PharmacologyEN(request):
@@ -498,38 +498,38 @@ def PharmacologyEN(request):
     }
 
     language = {
-        "O'zb": "/Pharmacology",
-        "Рус": "/RU/PharmacologyRU",
-        "Eng": "/EN/PharmacologyEN"
+        "O'zb": "/uz/PharmacologyUZ",
+        "Рус": "/ru/PharmacologyRU",
+        "Eng": "/en/PharmacologyEN"
     }
     
     LEVE_LB = True
-    return render(request, "Laboratories/Pharmacology/PharmacologyEN.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "en/LaboratoriesTempl/PharmacologyEN.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
 
 
 
 def KletkaTech(request):
     list_GUI_left = {
-        "Oqsillar va peptidlar kimyosi": "Chemistry_of_proteins_and_peptides",
-        "Biologik faol makromolekulyar tizimlar": "BiolActiv",
+        "Oqsillar va peptidlar kimyosi": "Chemistry_of_proteins_and_peptidesUZ",
+        "Biologik faol makromolekulyar tizimlar": "BiolActivUZ",
         "Fermentlar kimyosi": "#!",
         "O'simliklar sitoprotektorlari": "#!",
         "Past molekulyar og'irlikdagi biologik faol birikmalar": "#!",
         "Murakkab ulanishlar": "#!",
-        "Eksperimental va texnologik": "ExperTechnol",
-        "Biologik faol moddalarning farmakologiyasi va skriningi": "Pharmacology",
-        "Sabzavot va o'simlik ekinlarining uyali texnologiyalari": "KletkaTech",
-        "Biopolimerlar asosida tabiiy dori vositalarini ishlab chiqish": "DevelopmentPermit"
+        "Eksperimental va texnologik": "ExperTechnolUZ",
+        "Biologik faol moddalarning farmakologiyasi va skriningi": "PharmacologyUZ",
+        "Sabzavot va o'simlik ekinlarining uyali texnologiyalari": "KletkaTechUZ",
+        "Biopolimerlar asosida tabiiy dori vositalarini ishlab chiqish": "DevelopmentPermitUZ"
     }
 
     language = {
-        "O'zb": "/KletkaTech",
-        "Рус": "/RU/KletkaTechRU",
-        "Eng": "/EN/KletkaTechEN"
+        "O'zb": "/uz/KletkaTechUZ",
+        "Рус": "/ru/KletkaTechRU",
+        "Eng": "/en/KletkaTechEN"
     }
 
     LEVE_LB = True
-    return render(request, "Laboratories/KletkaTech/KletkaTech.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "uz/LaboratoriesTempl/KletkaTechUZ.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
 
 def KletkaTechRU(request):
     list_GUI_left = {
@@ -546,13 +546,13 @@ def KletkaTechRU(request):
     }
 
     language = {
-        "O'zb": "/KletkaTech",
-        "Рус": "/RU/KletkaTechRU",
-        "Eng": "/EN/KletkaTechEN"
+        "O'zb": "/uz/KletkaTechUZ",
+        "Рус": "/ru/KletkaTechRU",
+        "Eng": "/en/KletkaTechEN"
     }
 
     LEVE_LB = True
-    return render(request, "Laboratories/KletkaTech/KletkaTechRU.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "ru/LaboratoriesTempl/KletkaTechRU.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
 
 def KletkaTechEN(request):
     list_GUI_left = {
@@ -569,38 +569,38 @@ def KletkaTechEN(request):
     }
 
     language = {
-        "O'zb": "/KletkaTech",
-        "Рус": "/RU/KletkaTechRU",
-        "Eng": "/EN/KletkaTechEN"
+        "O'zb": "/uz/KletkaTechUZ",
+        "Рус": "/ru/KletkaTechRU",
+        "Eng": "/en/KletkaTechEN"
     }
     
     LEVE_LB = True
-    return render(request, "Laboratories/KletkaTech/KletkaTechEN.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "en/LaboratoriesTempl/KletkaTechEN.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
 
 
 
 def DevelopmentPermit(request):
     list_GUI_left = {
-        "Oqsillar va peptidlar kimyosi": "Chemistry_of_proteins_and_peptides",
-        "Biologik faol makromolekulyar tizimlar": "BiolActiv",
+        "Oqsillar va peptidlar kimyosi": "Chemistry_of_proteins_and_peptidesUZ",
+        "Biologik faol makromolekulyar tizimlar": "BiolActivUZ",
         "Fermentlar kimyosi": "#!",
         "O'simliklar sitoprotektorlari": "#!",
         "Past molekulyar og'irlikdagi biologik faol birikmalar": "#!",
         "Murakkab ulanishlar": "#!",
-        "Eksperimental va texnologik": "ExperTechnol",
-        "Biologik faol moddalarning farmakologiyasi va skriningi": "Pharmacology",
-        "Sabzavot va o'simlik ekinlarining uyali texnologiyalari": "KletkaTech",
-        "Biopolimerlar asosida tabiiy dori vositalarini ishlab chiqish": "DevelopmentPermit"
+        "Eksperimental va texnologik": "ExperTechnolUZ",
+        "Biologik faol moddalarning farmakologiyasi va skriningi": "PharmacologyUZ",
+        "Sabzavot va o'simlik ekinlarining uyali texnologiyalari": "KletkaTechUZ",
+        "Biopolimerlar asosida tabiiy dori vositalarini ishlab chiqish": "DevelopmentPermitUZ"
     }
 
     language = {
-        "O'zb": "/DevelopmentPermit",
-        "Рус": "/RU/DevelopmentPermitRU",
-        "Eng": "/EN/DevelopmentPermitEN"
+        "O'zb": "/uz/DevelopmentPermitUZ",
+        "Рус": "/ru/DevelopmentPermitRU",
+        "Eng": "/en/DevelopmentPermitEN"
     }
 
     LEVE_LB = True
-    return render(request, "Laboratories/DevelopmentPermit/DevelopmentPermit.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "uz/LaboratoriesTempl/DevelopmentPermit.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
 
 def DevelopmentPermitRU(request):
     list_GUI_left = {
@@ -617,13 +617,13 @@ def DevelopmentPermitRU(request):
     }
 
     language = {
-        "O'zb": "/DevelopmentPermit",
-        "Рус": "/RU/DevelopmentPermitRU",
-        "Eng": "/EN/DevelopmentPermitEN"
+        "O'zb": "/uz/DevelopmentPermitUZ",
+        "Рус": "/rn/DevelopmentPermitRU",
+        "Eng": "/en/DevelopmentPermitEN"
     }
 
     LEVE_LB = True
-    return render(request, "Laboratories/DevelopmentPermit/DevelopmentPermitRU.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "ru/LaboratoriesTempl/DevelopmentPermitRU.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
 
 def DevelopmentPermitEN(request):
     list_GUI_left = {
@@ -640,10 +640,10 @@ def DevelopmentPermitEN(request):
     }
 
     language = {
-        "O'zb": "/DevelopmentPermit",
-        "Рус": "/RU/DevelopmentPermitRU",
-        "Eng": "/EN/DevelopmentPermitEN"
+        "O'zb": "/uz/DevelopmentPermit",
+        "Рус": "/ru/DevelopmentPermitRU",
+        "Eng": "/en/DevelopmentPermitEN"
     }
     
     LEVE_LB = True
-    return render(request, "Laboratories/DevelopmentPermit/DevelopmentPermitEN.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "en/LaboratoriesTempl/DevelopmentPermitEN.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})

@@ -83,20 +83,10 @@
                 <div class="dropdown">
                     <button class="dropbtn">Institut haqida <i class="fas fa-chevron-down dropdown_icon"></i></button>
                     <div class="dropdown-content">
-                        <div class="dropdown2">
-                            <button class="dropbtn2">Tarix</button>
-                            <div class="dropdown-content2">
-                                <a href = "{% url 'History' %}">Institut tarixi</a>  
-                                <a href = "{% url 'Directors' %}">Direktorlar</a>
-                            </div>
-                        </div>
-
-                        <a href="{% url 'Management' %}">Yetakchilik</a>
-                        <a href="{% url 'SciDirection' %}">Ilmiy yo‘nalish</a>
 
                         <div class="dropdown2">
                             <button class="dropbtn2">Laboratoriyalar</button>
-                            <div class="dropdown-content2">
+                            <div class="dropdown-content2" style = "width: 400px">
                                 <a href = "{% url 'Chemistry_of_proteins_and_peptides' %}">Oqsillar va peptidlar kimyosi</a>  
                                 <a href = "{% url 'BiolActiv' %}">Biologik faol makromolekulyar tizimlar</a>
                                 <a>Fermentlar kimyosi</a>
@@ -109,6 +99,19 @@
                                 <a href = "{% url 'DevelopmentPermit' %}">Biopolimerlar asosida tabiiy dori vositalarini ishlab chiqish</a>
                             </div>
                         </div>
+
+                        <div class="dropdown2">
+                            <button class="dropbtn2">Tarix</button>
+                            <div class="dropdown-content2">
+                                <a href = "{% url 'History' %}">Institut tarixi</a>  
+                                <a href = "{% url 'Directors' %}">Direktorlar</a>
+                            </div>
+                        </div>
+
+                        <a href="{% url 'Management' %}">Yetakchilik</a>
+                        <a href="{% url 'SciDirection' %}">Ilmiy yo‘nalish</a>
+
+
 
                         <a href="#!">Yutuqlar</a>
                         <a href="#!">Amaliy ishlanmalar va patentlar</a>

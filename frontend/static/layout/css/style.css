@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Bruno+Ace+SC&family=Foldit:wght@200&family=Instrument+Serif:ital@1&family=Montserrat:ital,wght@0,600;1,300&family=Oswald&family=Roboto&family=Roboto+Condensed&family=Roboto+Slab:wght@900&family=Sigmar&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Bruno+Ace+SC&family=Foldit:wght@200&family=Instrument+Serif:ital@1&family=Montserrat:ital,wght@0,600;1,300&family=Oswald&family=Roboto&family=Roboto+Condensed&family=Roboto+Slab:wght@900&family=Sigmar&display=swap'); */
 
 * {
     margin: 0;
@@ -6,48 +6,19 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+
+    font-family: 'Times New Roman', Times, serif;
 }
 
-/* :root[data-theme = "white"] {
-    --BGHtml: white;
-    --ColorText: #000;
-    --FamalyTitle: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    --FamalyText:  'Roboto Condensed', sans-serif;
-    --ActiveColor: rgb(58, 58, 204);
-    --NotActiveColor: #333;
-    --BG_itme: aliceblue;
-    --BG_menu: #333;
-    --Active_menu_color: aliceblue;
-    --BtnNewsColor: rgb(58, 58, 204);
-
-    --Active_color2:#007FFF ;
-    
-} */
-
-
-
-/* :root[data-theme = "dark"] {
-    --BGHtml: #333;
-    --ColorText: white;
-    --FamalyTitle: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    --FamalyText:  'Roboto Condensed', sans-serif;
-    --ActiveColor: rgb(87, 86, 86);
-    --NotActiveColor: white;
-    --BG_itme: rgb(39, 38, 38);
-    --BG_menu: rgb(4, 75, 168);
-    --Active_menu_color: rgb(255, 255, 255);
-    --BtnNewsColor: rgb(58, 58, 204);
-
-    --Active_color2: #333;
-} */
 
 
 
 body {
     --BGHtml: white;
     --ColorText: #000;
-    --FamalyTitle: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    --FamalyText:  'Roboto Condensed', sans-serif;
+    --FamalyTitle:  Georgia, Times, serif;
+    /* --FamalyText:  'Roboto Condensed', sans-serif; */
+    --FamalyText:  Georgia, Times, serif;
     --ActiveColor: rgb(58, 58, 204);
     --NotActiveColor: #333;
     --BG_itme: aliceblue;
@@ -62,8 +33,9 @@ body {
 body.dark-theme {
     --BGHtml: #333;
     --ColorText: white;
-    --FamalyTitle: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    --FamalyText:  'Roboto Condensed', sans-serif;
+    /* --FamalyTitle: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    --FamalyTitle:  Georgia, Times, serif;
+    --FamalyText:   Georgia, Times, serif;
     --ActiveColor: rgb(201, 137, 18);
     --NotActiveColor: white;
     --BG_itme: rgb(39, 38, 38);
@@ -159,7 +131,7 @@ p {
     flex-direction: column;
     gap: 5px;
     font-variant: small-caps !important;
-    font-family: Georgia, Times, serif !important;
+    /* font-family: Georgia, Times, serif !important; */
     font-size: 35px;
 }
 
@@ -201,10 +173,10 @@ p {
     justify-content: center;
     gap: 5px;
     text-decoration: none;
-    font-family: var(--FamalyText);
+    /* font-family: var(--FamalyText); */
     transition: 0.5s;    
    
-    font-family: var(--FontFamaly2);
+    /* font-family: var(--FontFamaly2); */
 }
 
 .Contact_nav .Langlich_link span {
@@ -342,15 +314,8 @@ p {
     
 
 
-    /* font-size: 15px;
-    font-weight: 600 !important;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
-    
-    /* font-family: 'Lato';
-    font-size: 20px;
-    font-weight: 400; */
 
-    font-family: var(--FontFamaly2);
+    /* font-family: var(--FontFamaly2); */
     
 }
 
@@ -400,7 +365,7 @@ p {
     text-decoration: none;
     display: block;
     transition: 0.5s;
-    font-family: var(--FontFamaly2);
+    /* font-family: var(--FontFamaly2); */
 }
 
 
@@ -462,7 +427,7 @@ p {
     text-decoration: none;
     display: block;
     transition: 0.5s;
-    font-family: var(--FamalyText);
+    /* font-family: var(--FamalyText); */
 }
 
 
@@ -479,54 +444,6 @@ p {
 
 
 
-
-/* .header {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    
-   
-    
-    background: none;
-}
-
-
-
-.header__info {
-    max-width: 1980px !important;
-    width: 100% !important;
-    margin: 0 auto;
-    padding: 0 15px;
-   
-    
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: auto;
-
-    border-left: solid 3px var(--ActiveColor);
-    border-right: solid 3px var(--ActiveColor);
-    background-color: white;
-
-}
-
-.fa-bars {
-    font-size: 30px;
-    color: #333;
-    padding:  5px;
-    border-radius: 10px 5px;
-    cursor: pointer;
-}
-
-#carouselExampleCaptions {
-    width: 100%;
-   
-}
 
 
 
