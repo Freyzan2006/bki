@@ -317,7 +317,7 @@ def BiolActiv(request):
     }
 
     LEVE_LB = True
-    return render(request, "uz/LaboratoriesTempl/BiolActiv/BiolActivUZ.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
+    return render(request, "uz/LaboratoriesTempl/BiolActivUZ.html", {"LEVE_LB": LEVE_LB, "list_GUI_left": list_GUI_left, "language": language})
 
 def BiolActivRU(request):
     list_GUI_left = {
